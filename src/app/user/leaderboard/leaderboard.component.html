@@ -1,0 +1,38 @@
+<table>
+  <thead>
+    <tr>
+      <th>Nº</th>
+      <th>Perfil</th>
+      <th>Logros</th>
+      <th>Puntos</th>
+      <th>Inventario</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users; let posStat = index">
+      <td>
+        <ng-container *ngIf="posStat === 0">
+          🥇
+        </ng-container>
+        <ng-container *ngIf="posStat === 1">
+          🥈
+        </ng-container>
+        <ng-container *ngIf="posStat === 2">
+          🥉
+        </ng-container>
+        <ng-container *ngIf="posStat > 2">
+          {{posStat + 1}}
+        </ng-container>
+      </td>
+      <td class="user-info">
+        <img [src]="user.avatar" alt="{{user.username}}'s avatar" class="avatar-icon" />
+        {{user.username}}
+      </td>
+      <td>{{user.achievements || 0}}</td>
+      <td>{{user.score}}</td>
+      <td>
+        <button class="btn-leaderboard btn-primary" (click)="openInventory(user.username)">Ver</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
