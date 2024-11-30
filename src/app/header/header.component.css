@@ -1,0 +1,22 @@
+.spacer {
+  flex: 0.5 0.5 auto;
+}
+
+.toolbar{
+  padding-left: 20vw;
+  padding-right: 20vw;
+  background: transparent;
+  font-size: large;
+}
+
+.mat-mdc-button:not(:disabled){
+  color: white;
+}
+.mat-mdc-button-base{
+  background: transparent;
+
+}
+.mat-mdc-button-base:hover{
+  background: linear-gradient(0deg, rgba(255,255,255,0.48363095238095233) 0%, rgba(255,255,255,0) 18%);
+
+}
