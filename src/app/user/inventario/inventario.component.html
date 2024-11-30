@@ -1,25 +1,29 @@
-<table>
-  <thead>
-    <tr>
-      <th>Imagen</th>
-      <th>Posicion</th>
-      <th>Nombre</th>
-      <th>Descripción</th>
-      <th>Plataforma</th>
-      <th>Juego</th>
-      <th>Rareza</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let logro of data.achievements; let i = index">
-      <td>
-        <img [src]="logro.photo" alt="Imagen del logro" class="logro-image">
-      </td>
-      <td>{{i + 1}}</td>
-      <td>{{logro.name}}</td>
-      <td>{{logro.description}}</td>
-      <td>{{logro.platform}}</td>
-      <td>{{logro.gameName}}</td>
-      <td>{{logro.platform}}</td>
-      <td>{{logro.rarity}}</td>
-</table>
+<!--<table>-->
+<!--  <thead>-->
+<!--    <tr>-->
+<!--      <th>Imagen</th>-->
+<!--      <th>Posicion</th>-->
+<!--      <th>Nombre</th>-->
+<!--      <th>Descripción</th>-->
+<!--      <th>Plataforma</th>-->
+<!--      <th>Juego</th>-->
+<!--      <th>Rareza</th>-->
+<!--    </tr>-->
+<!--  </thead>-->
+<!--  <tbody>-->
+<div class="container_big">
+  <div class="user-info-inv"><img [src]="'https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/48px-User_icon_2.svg.png'" alt="'s avatar" class="avatar-icon" />
+    </div>
+<div class="container_inv">
+    <div *ngFor="let logro of data.achievements; let i = index">
+<!--      <td>-->
+        <img [src]="logro.photo" alt="Imagen del logro" class="logro-image"></div></div>
+<!--      </td>-->
+<!--      <td>{{i + 1}}</td>-->
+<!--      <td>{{logro.name}}</td>-->
+<!--      <td>{{logro.description}}</td>-->
+<!--      <td>{{logro.platform}}</td>-->
+<!--      <td>{{logro.gameName}}</td>-->
+<!--      <td>{{logro.platform}}</td>-->
+<!--      <td>{{logro.rarity}}</td>-->
+<!--</table>-->
