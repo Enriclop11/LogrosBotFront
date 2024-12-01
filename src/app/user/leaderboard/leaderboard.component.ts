@@ -1,13 +1,11 @@
 import {Component, OnInit} from '@angular/core';
 import {ApiLogrosService} from '../../services/api-logros.service';
-import {NgForOf, NgIf, NgOptimizedImage} from '@angular/common';
-import {ActivatedRoute} from '@angular/router';
+import {NgForOf, NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-leaderboard',
   imports: [
     NgForOf,
-    NgOptimizedImage,
     NgIf
   ],
   templateUrl: './leaderboard.component.html',

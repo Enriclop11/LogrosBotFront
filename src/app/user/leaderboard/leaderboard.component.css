@@ -40,26 +40,26 @@ tr:hover {background-color: #295391;}
 }
 
 .btn-leaderboard {
-  display: inline-flex; /* Asegura que el contenido esté alineado */
-  align-items: center; /* Centra verticalmente el SVG */
-  justify-content: center; /* Centra horizontalmente el SVG */
-  padding: 10px 20px; /* Ajusta el espacio interior del botón */
-  background-color: transparent; /* Color de fondo */
-  color: white; /* Color del texto o SVG */
-  border: none; /* Sin borde */
-  border-radius: 5px; /* Bordes redondeados */
-  cursor: pointer; /* Cambia el cursor al pasar por encima */
-  transition: background-color 0.3s; /* Efecto suave en hover */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .btn-icon:hover {
-  width: 30px; /* Ajusta el tamaño del SVG */
+  width: 30px;
   height: 30px;
 }
 
 .btn-icon {
-  width: 24px; /* Ajusta el tamaño del SVG */
-  height: 24px; /* Mantén las proporciones */
+  width: 24px;
+  height: 24px;
 }
 
 
