@@ -1,13 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import {NgForOf, NgIf} from '@angular/common';
-import {MatDialog} from '@angular/material/dialog';
 import {ApiLogrosService} from '../../services/api-logros.service';
 
 @Component({
   selector: 'app-profile',
   standalone: true,
-  imports: [FormsModule, NgIf, NgForOf],
+  imports: [FormsModule],
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
@@ -16,7 +14,7 @@ export class ProfileComponent implements OnInit {
   userInfo: any = {};
   selectedCards: any = [];
 
-  constructor(private readonly apiLogrosService: ApiLogrosService, private dialog: MatDialog) {}
+  constructor(private readonly apiLogrosService: ApiLogrosService) {}
 
   ngOnInit() {
     if (!localStorage.getItem('token')) {

@@ -27,6 +27,12 @@ export class InventarioComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       this.user = params.get('user') || '';
+
+      if (this.user === 'LOGIN') {
+        this.router.navigate(['/login']);
+        return;
+      }
+
       this.apiLogrosService.getUserInfo(this.user).subscribe(
         (data) => {
           if (Array.isArray(data.achievements)) {
