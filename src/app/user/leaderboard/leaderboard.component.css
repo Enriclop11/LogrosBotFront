@@ -27,7 +27,7 @@ th, td {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-tr:hover {background-color: #295391;}
+tr:hover {background-color: rgba(20, 61, 119, 0.56);}
 
 .container{
   display: flex;

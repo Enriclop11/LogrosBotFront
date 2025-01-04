@@ -1,0 +1,17 @@
+.top-buttons{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.username{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.btn{
+  border-style: solid;
+  border-radius: 4rem;
+  padding: 0.6rem 1.2rem 0.6rem 1.2rem;
+}

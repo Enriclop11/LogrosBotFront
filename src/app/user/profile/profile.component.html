@@ -1,7 +1,9 @@
 
 <div class="top-buttons">
   <div class="my-cards">
-    <a class="btn" (click)="myCards()">Mis Cartas</a>
+    <div class="user-info-inv"><img [src]="userInfo.avatar" alt="'s avatar" class="avatar-icon" />
+      <div class="username"><h1>{{userInfo.username.charAt(0).toUpperCase() + userInfo.username.slice(1).toLowerCase()}}</h1></div>
+    </div>
   </div>
 
   <div class="logout">

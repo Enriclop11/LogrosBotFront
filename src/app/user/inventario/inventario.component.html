@@ -13,11 +13,13 @@
 <!--  <tbody>-->
 <div class="container_big">
   <div class="user-info-inv"><img [src]="data.avatar" alt="'s avatar" class="avatar-icon" />
+    <div class="username"><h1>{{ data.username.charAt(0).toUpperCase() + data.username.slice(1).toLowerCase() }}</h1></div>
     </div>
 <div class="container_inv">
     <div *ngFor="let logro of data.achievements; let i = index">
 <!--      <td>-->
-        <img [src]="logro.photo" alt="Imagen del logro" class="logro-image"></div></div>
+        <div class="tooltip"><img [src]="logro.photo" alt="{{logro.name}}"  class="logro-image">
+    <span class="tooltip-text"> <strong>{{logro.gameName}}</strong> <br>{{logro.name}} </span></div></div></div>
 <!--      </td>-->
 <!--      <td>{{i + 1}}</td>-->
 <!--      <td>{{logro.name}}</td>-->

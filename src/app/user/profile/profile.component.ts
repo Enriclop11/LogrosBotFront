@@ -14,6 +14,7 @@ export class ProfileComponent implements OnInit {
   userInfo: any = {};
   selectedCards: any = [];
 
+
   constructor(private readonly apiLogrosService: ApiLogrosService) {}
 
   ngOnInit() {
