@@ -23,10 +23,17 @@ export class LeaderboardComponent implements OnInit {
   ngOnInit(): void {
     this.apiLogrosService.getUsers().subscribe((data) => {
       this.users = data;
+      this.sortUsers();
     });
   }
 
   openInventory(user: any) {
     window.location.href = `/user/${user}`;
+  }
+
+  sortUsers() {
+    this.users.sort((a: any, b: any) => {
+      return b.achievements - a.achievements;
+    });
   }
 }

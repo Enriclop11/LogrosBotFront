@@ -21,6 +21,10 @@ table{
   width: 70%;
 }
 
+table tr {
+  height: 80px;
+}
+
 th, td {
   border-bottom: 1px solid #ddd;
   text-align: center;
@@ -61,5 +65,3 @@ tr:hover {background-color: rgba(20, 61, 119, 0.56);}
   width: 24px;
   height: 24px;
 }
-
-
